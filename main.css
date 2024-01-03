@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header, li a {
+    background-color: #3f7cc1;
+    color: #fff;
+    width: 100%;
+}
+
+header {
+    padding: 16px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.container > img {
+    width: 400px;
+    margin-top: 40px;
+    margin-right: 42px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+
+h2 {
+    font-size: 1.7em;
+    color: #3f7cc1;
+    font-style: italic;
+    margin-top: 40px;
+    border-bottom: 2px solid #3f7cc1;
+    width: 100%;
+    padding-bottom: 16px;
+    margin-bottom: 36px;
+}
+
+.produto {
+    flex-direction: column;
+}
+
+
+#produtos img {
+    width: 100%;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 16px 0;
+}
+
+#produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+#produtos li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3f7cc1;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #3f7cc1;
+    padding: 10px 0;
+    color: #fff;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 640px) {
+    .Sobre-a-loja {
+        display: block;
+    }
+
+    .container > img {
+        width: 100%;
+    }
+
+    #produtos {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .Sobre-a-loja {
+        display: block;
+    }
+
+    .container > img {
+        width:100%;
+    }
+
+    #produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        justify-content: center;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+}
